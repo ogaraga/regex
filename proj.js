@@ -30,8 +30,8 @@ enter.addEventListener("click", (e) => {
     { (nam2 === true && fName.value != "") ? alert("Valid Name(s) entered!") : alert("Invalid Name entered!"), fName.value = "" };
     { (pass.value != "" && pas2 === true) ? alert("Valid password entered!") : alert("Invalid password entered!"), pass.value = "" };
     if (email.value != "" && txt2 && !(lab1.innerHTML.match(email.value))) {
-        alert("E-mail address is available!");
         alert("Valid e-mail entered!");
+        alert("E-mail address is available!");
         lab1.textContent += email.value + ' ,' + '\n';
         lab1.style.textDecoration = "none";
         email.value = "";
@@ -39,8 +39,8 @@ enter.addEventListener("click", (e) => {
     }
 
     else {
-        alert("Invalid e-mail entered!");
         alert("E-mail address has been used or illegal!");
+        alert("Invalid e-mail entered!");
         email.value = "";
     }
 

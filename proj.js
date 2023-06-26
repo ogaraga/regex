@@ -40,7 +40,7 @@ enter.addEventListener("click", (e) => {
 
     else {
         alert("Invalid e-mail entered!");
-        alert("E-mail address is in use!");
+        alert("E-mail address has been used or illegal!");
         email.value = "";
     }
 

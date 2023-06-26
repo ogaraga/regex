@@ -41,7 +41,6 @@ enter.addEventListener("click", (e) => {
     else {
         alert("Invalid e-mail entered!");
         alert("E-mail address is in use!");
-        lab1.style.color = "crimson";
         email.value = "";
     }
 

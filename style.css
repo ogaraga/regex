@@ -1,0 +1,144 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+.container {
+  background-color: grey;
+  width: 100vw;
+  margin: auto;
+  height: 100vh;
+  display: grid;
+  place-content: center;
+}
+h1 {
+  text-align: center;
+  margin: auto 10px;
+  font-size: 25px;
+  color: crimson;
+  font-family: "Segoe UI", Tahoma, Verdana, sans-serif;
+}
+.form-control {
+  background-color: teal;
+  width: 80vw;
+  height: 80vh;
+  margin: 10px auto;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 10px;
+  border-style: ridge;
+  box-shadow: 2px 2px 3px 4px, -2px -2px 1px 4px gold;
+}
+input {
+  padding: 10px;
+  margin-top: 5px;
+  width: 100%;
+  border: 0;
+  border-radius: 5px;
+  outline: 0;
+  border-style: ridge;
+  background-color: coral;
+  color: white;
+  font-size: 18px;
+  font-weight: bolder;
+}
+.button-container {
+  background-color: blueviolet;
+  width: 100%;
+  padding: 10px;
+  margin: 10px auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 10px;
+}
+#enter {
+  padding: 10px;
+  width: 100%;
+  margin: 10px;
+  border: 0;
+  background-color: gold;
+  font-size: 18px;
+  cursor: pointer;
+  transition: all 1s ease;
+  position: relative;
+}
+#picker {
+  padding: 10px;
+  width: 100%;
+  margin: 10px;
+  border: 0;
+  background-color: blue;
+  cursor: pointer;
+  transition: all 1s ease;
+  font-size: 18px;
+  position: relative;
+}
+
+#enter::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 0;
+  height: 0;
+}
+
+#picker::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 0;
+  height: 0;
+}
+#enter:hover::after {
+  background-color: gray;
+  width: 100%;
+  height: 100%;
+  transition: all 1s ease;
+}
+#picker:hover::after {
+  background-color: lightblue;
+  width: 100%;
+  height: 100%;
+  transition: all 1s ease;
+}
+.labels {
+  display: flex;
+  background-color: aliceblue;
+  border: 0;
+  outline: 0;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+#lab1 {
+  background-color: aqua;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  margin: auto 0;
+  color: blue;
+  font-size: 18px;
+  font-weight: bolder;
+  word-wrap: break-word;
+}
+#lab2 {
+  background-color: darkorange;
+  width: 100%;
+  height: 100%;
+  word-wrap: break-word;
+  text-align: center;
+  margin: auto 0;
+  color: grey;
+  font-weight: bolder;
+  font-size: 18px;
+}

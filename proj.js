@@ -32,7 +32,7 @@ enter.addEventListener("click", (e) => {
     if (email.value != "" && txt2 && !(lab1.innerHTML.match(email.value))) {
         alert("E-mail address is available!");
         alert("Valid e-mail entered!");
-        lab1.textContent += email.value + '\n';
+        lab1.textContent += email.value + ' ,' + '\n';
         lab1.style.textDecoration = "none";
         email.value = "";
         lab1.style.color = "darkgreen";

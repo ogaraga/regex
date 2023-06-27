@@ -22,9 +22,9 @@ enter.addEventListener("click", (e) => {
     //creating regex.
     let txt = /^([a-zA-Z0-9-._]+)@([a-zA-Z-._]+).([a-zA-Z]{2})$/;
     let txt2 = txt.exec(email.value);
-    let nam = /^([a-zA-Z]+){3}$/;
+    let nam = /^([a-zA-Z\w\s]+){3,}$/;
     let nam2 = nam.test(fName.value);
-    let pas = /([a-zA-Z0-9!@#.,$%&+-_*)]{5})/;
+    let pas = /^([a-zA-Z0-9!@#.,$%&+-_*)]{5,}$)/;
     let pas2 = pas.test(pass.value);
 
     { (nam2 === true && fName.value != "") ? alert("Valid Name(s) entered!") : alert("Invalid Name entered!"), fName.value = "" };

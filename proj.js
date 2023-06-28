@@ -24,7 +24,7 @@ enter.addEventListener("click", (e) => {
     let txt2 = txt.exec(email.value);
     let nam = /^([a-zA-Z\s]+){3,}$/;
     let nam2 = nam.test(fName.value);
-    let pas = /^([a-zA-Z0-9!()`'"?:;[}{><@#.,$%&+-_*]+){5,}$/;
+    let pas = /^([a-zA-Z0-9!()`'"?:;[||}{><@#.,$%&+-_*]+){5,}$/;
     let pas2 = pas.test(pass.value);
 
     { (nam2 === true && fName.value != "") ? alert("Valid Name(s) entered!") : alert("Invalid Name entered!"), fName.value = "" };
